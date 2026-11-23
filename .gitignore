@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Next.js build / dev output
+.next/
+out/
+dist/
+
+# Local environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Generated build info
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Playwright
+playwright-report/
+test-results/
+playwright/.cache/
+
+# Editor & OS noise
+.DS_Store
+Thumbs.db
+.vscode/

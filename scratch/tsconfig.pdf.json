@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "jsx": "react-jsx",
+    "outDir": "./out2",
+    "rootDir": "..",
+    "esModuleInterop": true,
+    "types": ["node"]
+  },
+  "include": [
+    "../lib/services/invoices.ts",
+    "../components/invoices/service-invoice-pdf.tsx"
+  ]
+}
