@@ -1,4 +1,4 @@
-import { createElement } from "react";
+import { createElement, type ReactElement } from "react";
 import type { Client, Invoice, Profile } from "@/types/database.types";
 
 /**
@@ -138,7 +138,7 @@ export async function downloadProofOfIncomePdf(data: {
     createElement(ProofOfIncomePdf, {
       profile: data.profile,
       summary: data.summary,
-    })
+    }) as ReactElement
   ).toBlob();
 
   const url = URL.createObjectURL(blob);
